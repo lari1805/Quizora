@@ -1,0 +1,114 @@
+body { margin: 0;font-family: Arial, sans-serif;background-color: #7a1394;}
+.app {
+  display: flex; height: 100vh;}
+
+.sidebar { background-image: url('C:\Users\Lenovo\OneDrive\Desktop\quizzzz\quiz-website\public\sidebarrrr.jpg');color: white; padding: 20px; width: 250px; 
+  display: flex; flex-direction: column;}
+
+.sidebar h1 {font-size: 24px;}
+
+.dashboard {margin-top: 20px;}
+
+.dashboard button { background-color: #9575cd; border: none; color: white;padding: 10px; margin: 5px 0;
+  cursor: pointer;border-radius: 5px;}
+
+.dashboard button:hover { background-color: #7e57c2;}
+
+.content {padding: 20px;flex-grow: 1;overflow-y: auto; width: 300px; height: 694px;
+   background-image: url('C:\Users\Lenovo\OneDrive\Desktop\quizzzz\quiz-website\public\Untitled design.png');
+  background-size: cover;background-repeat: repeat;position: relative;}
+
+  .homepage { display:flex; flex-direction: column; align-items: center;
+  background-image: url('C:\Users\Lenovo\OneDrive\Desktop\quizzzz\quiz-website\public\canva.gif');
+  width: 1025px; height: 645px;float:right; margin-right: 13cqmin; margin-top:4cqmin}
+
+  .form { background-image: url('C:\Users\Lenovo\OneDrive\Desktop\quizzzz\quiz-website\public\download.gif');
+  width: 1150px;justify-content: center; align-items: center; padding: 30px; border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin: 20px 0;}
+
+.form h2 { margin-bottom: 20px; color:azure;}
+
+.form p{color:azure;}
+
+.form input { width: 99%; padding: 10px;margin: 6px 0;border: 1px solid #ccc;border-radius: 5px;}
+
+.form button { width: 101%; background-color: #673ab7; color: white; padding: 10px; border: none;
+  border-radius: 5px;cursor: pointer;}
+
+.form button:hover {background-color: #5e35b1;color:azure;}
+
+.categories {display: flex;flex-direction: column;padding:30px}
+
+.categories button {background-image: linear-gradient(to right,rgb(236, 99, 251),rgb(99, 4, 134));
+  border: none;color:white;font-size:x-large;font-family:Georgia, 'Times New Roman', Times, serif;
+  padding: 12px;margin: 5px 0; cursor: pointer; border-radius: 5px;}
+
+.categories button:hover {background-image:pink;}
+
+.categories h2{color: white;font-family:Georgia, 'Times New Roman', Times, serif ;}     
+
+.quiz {background-color: rgb(72, 5, 126);color: white;padding: 20px;border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);display: flex;flex-direction: column;gap: 10px;}
+
+.quiz h2 {margin-bottom: 20px;}
+
+.quiz button{display: block;  width: 100%;  padding: 10px; background-color: pink;  
+  color: rgb(69, 66, 127); border: 2px solid grey; cursor: pointer;font-size: 16px;}
+
+.quiz button:hover{ background-image:linear-gradient(to right,rgb(229, 137, 231),rgb(187, 255, 0));}
+
+.results-container {display: flex;justify-content: space-between;padding: 20px;gap: 20px;
+  font-family: 'Press Start 2P', cursive;}
+
+  .score-form {width: 36%;height:15cm;padding: 2px; border-radius: 15px;
+  background-image:url('C:\Users\Lenovo\OneDrive\Desktop\quizzzz\quiz-website\public\Navy blue and Purple Minimalist Illustrated Night Sky Phone Wallpaper.gif');
+  color: #d27241; position: relative;overflow: hidden;text-align: center;border: 3px solid #ec8b36;
+  box-shadow: 0 8px 20px rgba(247, 129, 32, 0.7), inset 0 0 15px rgba(255, 215, 0, 0.3);
+  font-family: 'Press Start 2P', cursive; font-size: x-large;}
+
+  .score-form::before, .score-form::after { content: "🌟✨🎉💥"; font-size: 2em; position: absolute;
+  color: rgba(255, 223, 0, 0.8); animation: floatEmojis 3s ease-in-out infinite alternate;}
+
+.score-form::before {top: -20px;left: 10px;}
+
+.score-form::after {bottom: -20px; right: 10px;}
+
+@keyframes floatEmojis { 0% { transform: translateY(0); } 100% { transform: translateY(15px); }}
+
+.score-form h1 {font-size: 1.8em;color: #e85c11; margin-bottom: 20px;position: relative;z-index: 1; text-shadow: 0 0 5px #f3f3f3, 0 0 10px #f4f1f2;}
+
+.score-message {font-size: 2em; color: #9597b1; margin-top: 20px; position: relative; z-index: 1;}
+
+.score-message span {font-size: 10em; font-weight: bold; color: #32cd32;text-shadow: 0 0 15px #32cd32, 0 0 30px #32cd32;
+  animation: pulseScore 1s infinite alternate;}
+
+  @keyframes pulseScore {0% { transform: scale(1); }100% { transform: scale(1.3); }}
+
+  .results-form ul { list-style: none; padding: 0;}
+
+.results-form ul li {font-size: 1em; padding: 10px; margin: 10px 0; border-radius: 8px; background-color: #8e54b6;
+  color: #ffffff; box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.2);}
+
+.results-form ul li:hover {box-shadow: 0 0 10px #00ffd5, inset 0 0 10px #00ffd5;transition: 0.3s ease;}
+
+.results-form h2{ color:#d01277}
+
+.results-form p{ color:white;font-size:xx-large;}
+
+.quiz-navigation { display: flex;justify-content: space-between; width: 100%;margin-top: 20px;}
+
+.quiz-navigation button { position: fixed;  bottom: 20px; left: 1255px; height:7vh; width:5cm;
+ padding: 10px 20px; background-color:pink; color: black; border: none;border-radius: 5px;
+  font-size: 16px;cursor: pointer;}
+
+  .next-button {background-color: #007bff; border: 1px solid #0056b3; color: white;}
+
+  
+  
+  
+
+
+
+
+
+
